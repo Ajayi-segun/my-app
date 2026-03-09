@@ -5,14 +5,15 @@ export default function ProductCard({
     description,
     image,
     link,
-    isSpecial
+    children
 }) {
     return (
         <div className="product-card">
             <h2 className="p-title">{title}</h2>
             <img src={image} alt="product image"/>
-            <p className="p-desc">description</p>
-            <p className="p-btn" href={link}></p>
+            <p className="p-desc">{description}</p>
+            <p className="p-btn" href={link}>See More</p>
+            {children}
         </div>
     )
 }
