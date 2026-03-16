@@ -21,6 +21,8 @@
 }
 
 .nav-link {
+    position: relative;
+    background: none;
     color: white;
     padding: 4px 8px;
     font-weight: 600;
@@ -28,6 +30,20 @@
     border: 2px solid white;
     border-width: 2px 0px 2px 0px;
 }
+.nav-dropdown{
+    position: relative;
+}
+.dropdown-content {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 100%;
+    padding: 16px;
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+}
+
 .nav-col {
     display: flex;
     justify-content: flex-end;
