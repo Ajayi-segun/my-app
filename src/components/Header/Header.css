@@ -33,3 +33,40 @@
     justify-content: flex-end;
     gap: 16px;
 }
+
+.mobile-header {
+    display: none;
+    background-color: #141729;
+    align-items: center;
+    padding: 8px 128px;
+    gap: 16px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.menu-icon {
+    display: flex;
+}
+.mobile-nav {
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(16px);
+
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    height: calc(100dvh - 80px);
+}
+
+@media only screen and (max-width: 750px) {
+    .main-header {
+        display:none
+    }
+    .mobile-header {
+        display: flex;
+    }
+}
